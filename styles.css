@@ -1,0 +1,43 @@
+*{
+    box-sizing: border-box;
+    /* margin: 0; */
+    padding: 0;
+}
+
+body{
+    text-align: center;
+}
+.btns{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn{
+    width: 12rem;
+    height: 12rem;
+    border-radius: 20%;
+    border: 10px solid black;
+    margin: 1rem;
+}
+
+.yellow{
+    background-color: yellow;
+}
+.red{
+    background-color: red;
+}
+.green{
+    background-color: green;
+}
+.blue{
+    background-color: blue;
+}
+
+.flash {
+    background-color: #fff;
+}
+
+.wrong{
+    background-color: red;
+}
