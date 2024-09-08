@@ -2,10 +2,12 @@ let gameSeq = [];
 let userSeq = [];
 let level = 0;
 let start = false;
+let highScore = 0;
 
 let btns = ["yellow", "red", "green", "blue"];
 
 let h2 = document.querySelector("h2");
+let h_score = document.querySelector(".score");
 let allBtns = document.querySelectorAll(".btn");
 
 // -----------For starting the game-----------
@@ -78,8 +80,19 @@ function checkSeq(idx) {
       document.querySelector("body").classList.remove("wrong");
     }, 150);
 
+    // High Score Updation
+    highScoreUpdate();
+
     // reset to new game
     reset();
+  }
+}
+
+// -----------High Score Updation-----------
+function highScoreUpdate(){
+  if(highScore < level){
+    highScore = level;
+    h_score.innerText = highScore;
   }
 }
 
